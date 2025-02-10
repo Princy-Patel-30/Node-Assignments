@@ -7,7 +7,6 @@ const arr = [1,2,3,6,5];
 
 for (let i = 0 ; i < arr.length ; i++){
     if (arr[i] > 5 ){
-    console.log(arr[i]);
     break;
     }
     else if (arr[i] ==3){
