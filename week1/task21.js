@@ -16,9 +16,6 @@ const user2 = {
     name : "princy",
     age : 21,
 }
-
-
-
 //converting into 
 function compareObjects(obj1 , obj2){
     if(JSON.stringify(obj1) === JSON.stringify(obj2)){
