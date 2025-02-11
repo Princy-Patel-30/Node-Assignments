@@ -28,18 +28,4 @@ function constfunc(){                             //const is block scope
 constfunc();
 console.log(r);
 
-function varhoisted(){                         //hoisting for var
-    console.log(varhoisted);
-    var varhoisted = 4;
-    console.log(varhoisted);
-}
-varhoisted();
-function LChoisted(){
-    // console.log(Hlet);                      //hoisted let and var is invalid;
-    //console.log(Hconst);
-   let  Hlet = 3;
-   const Hconst = 40;
-   console.log(Hlet);
-    console.log(Hconst);
-}
-LChoisted();
+
