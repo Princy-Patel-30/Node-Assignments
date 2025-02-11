@@ -1,0 +1,29 @@
+<!-- Create an HTML button with the id "myButton" and an associated JavaScript function. 
+ Inside the function, use both a normal function and an arrow function to handle the button click event. 
+ Inside each function, use the "this" keyword to log the text content of the button. 
+ Add the event listeners to the button to trigger both functions. -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <title>Button Click Example</title>
+ </head>
+ <body>
+     <button id="myButton">Click Me!</button>
+ 
+     <script>
+        const button = document.getElementById("myButton");
+         function normal() {
+             console.log("Normal Function: Button text is:", this.textContent);
+         }
+         const arrow = () => {
+             console.log("Arrow Function: Button text is:", this.textContent);
+         };
+         
+         button.addEventListener('click', normal); 
+         button.addEventListener('click', arrow); 
+     </script>
+ </body>
+ </html>
+
+
+ !
